@@ -22,12 +22,12 @@
     </style>
 </head>
 <body>
-    <header class="bg-[#FFFBF0]">
-        <nav class="flex justify-between max-w-7xl mx-auto py-6 w-3/4 items-center">
+    <header class="bg-[#FFFBF0] w-full">
+        <nav class="flex justify-between max-w-7xl mx-auto py-6 w-3/4 items-center ">
             <div>
-                <img class="w-80" src="icons/logo.png" alt="">
+                <img class="lg:h-10 h-8" src="icons/logo.png" alt="">
             </div>
-            <div>
+            <div class="hidden lg:block sm:block lg:text-lg">
                 <ul class="flex roboto font-medium text-[#3C3C3C]">
                     <li class="ml-14"><a href="/home">Home</a></li>
                     <li class="ml-14"><a href="/product">Product</a></li>
@@ -37,29 +37,32 @@
             </div>
         </nav>
 
+        <!-- main section start here -->
 
         <main class="max-w-7xl mx-auto">
-            <div class="flex items-center justify-between pb-28">
+            <div class="flex items-center justify-between pb-12 lg:pb-28 flex-col-reverse lg:flex-row sm:flex-col-reverse">
                 <div>
-                    <h1 class="bebas-neue text-[#FABE4C] text-7xl">Be the Penguins <br><span class="text-7xl text-[#363958] ">of Winter</span></h1>
-                    <p class="roboto text-[#3E3E3E] my-3">Winter is one of the important seasons in bd <br>which begins on the Winter Solstice</p>
-                    <button class="flex bg-gradient-to-r from-[#A4BC46] to-[#85A019] uppercase font-medium text-[#FFF] py-4 rounded-md px-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <h1 class="bebas-neue text-[#FABE4C] lg:mt-5 mt-8 text-5xl  mx-10 lg:mx-0 lg:text-7xl">Be the Penguins <br><span class="text-5xl lg:text-7xl text-[#363958] ">of Winter</span></h1>
+                    <p class="roboto text-[#3E3E3E] my-3 lg:my-3 mx-10 lg:mx-0">Winter is one of the important seasons in bd which begins on the Winter Solstice</p>
+                    <button class="flex bg-gradient-to-r from-[#A4BC46] to-[#85A019] uppercase font-medium text-[#FFF] py-4 rounded-md px-8 mx-10 lg:mx-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                        buy now</button>
                 </div>
                 <div>
-                    <img src="images/model.png" alt="">
+                    <img class="lg:h-full h-64" src="images/model.png" alt="">
                 </div>
             </div>
         </main>
 
     </header>
 
+    <!-- product section start here -->
+
     <section class="max-w-7xl mx-auto my-12">
-        <h1 class="text-[#363958] bebas-neue text-5xl font-medium">Woman Jacket</h1>
-        <div class="grid grid-cols-3 gap-8">
-            <div class=" shadow-lg my-14 p-8 rounded-2xl ">
+        <h1 class="text-[#363958] bebas-neue text-4xl  mx-5 lg:mx-0 lg:text lg:font-medium">Woman Jacket</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class=" lg:shadow-lg lg:my-14 lg:p-8 lg:rounded-2xl lg:mx-0    mx-4 shadow-lg my-6 p-6 rounded-2xl">
                 <div class="bg-[#F1F1F1] py-8 px-16 rounded-2xl">
                     <img class="h-72" src="images/jacket-1.png" alt="">
                 </div>
@@ -74,7 +77,7 @@
             </div>
 
 
-            <div class=" shadow-lg my-14 p-8 rounded-2xl ">
+            <div class=" lg:shadow-lg lg:my-14 lg:p-8 lg:rounded-2xl lg:mx-0    mx-4 shadow-lg my-6 p-6 rounded-2xl">
                 <div class="bg-[#F1F1F1] py-8 px-16 rounded-2xl">
                     <img class="h-72" src="images/jacket-2.png" alt="">
                 </div>
@@ -89,7 +92,7 @@
             </div>
 
 
-            <div class=" shadow-lg my-14 p-8 rounded-2xl ">
+            <div class=" lg:shadow-lg lg:my-14 lg:p-8 lg:rounded-2xl lg:mx-0    mx-4 shadow-lg my-6 p-6 rounded-2xl">
                 <div class="bg-[#F1F1F1] py-8 px-16 rounded-2xl">
                     <img class="h-72" src="images/jacket-3.png" alt="">
                 </div>
@@ -112,9 +115,9 @@
 
 
 
-        <h1 class="text-[#363958] bebas-neue text-5xl font-medium">Man Jacket</h1>
-        <div class="grid grid-cols-3 gap-8">
-            <div class=" shadow-lg my-14 p-8 rounded-2xl ">
+        <h1 class="text-[#363958] bebas-neue lg:text-5xl lg:font-medium text-4xl mx-5">Man Jacket</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class=" lg:shadow-lg lg:my-14 lg:p-8 lg:rounded-2xl lg:mx-0    mx-4 shadow-lg my-6 p-6 rounded-2xl">
                 <div class="bg-[#F1F1F1] py-8 px-16 rounded-2xl">
                     <img class="h-72" src="images/jacket-4.png" alt="">
                 </div>
@@ -129,7 +132,7 @@
             </div>
 
 
-            <div class=" shadow-lg my-14 p-8 rounded-2xl ">
+            <div class=" lg:shadow-lg lg:my-14 lg:p-8 lg:rounded-2xl lg:mx-0    mx-4 shadow-lg my-6 p-6 rounded-2xl">
                 <div class="bg-[#F1F1F1] py-8 px-16 rounded-2xl">
                     <img class="h-72" src="images/jacket-5.png" alt="">
                 </div>
@@ -144,7 +147,7 @@
             </div>
 
 
-            <div class=" shadow-lg my-14 p-8 rounded-2xl ">
+            <div class=" lg:shadow-lg lg:my-14 lg:p-8 lg:rounded-2xl lg:mx-0    mx-4 shadow-lg my-6 p-6 rounded-2xl">
                 <div class="bg-[#F1F1F1] py-8 px-16 rounded-2xl">
                     <img class="h-72" src="images/jacket-6.png" alt="">
                 </div>
@@ -160,9 +163,12 @@
         </div>
 
 
+    </section>
 
+    <!-- user benifit section start -->
 
-
+    <section>
+        
     </section>
 
 </body>
